@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ee">
+  <meta name="description" content="PQR — Philomath Quantitative Research. A macrofinancial research group. Website in development.">
+  <title>PQR — Philomath Quantitative Research</title>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/281036968?s=256" type="image/png">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f5ee;
+      --ink: #3e4243;
+      --muted: #646766;
+      --line: #dfdcd3;
+    }
+    * { box-sizing: border-box; }
+    html { min-height: 100%; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      min-height: 100vh;
+      width: min(100% - 64px, 1100px);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .masthead {
+      min-height: 94px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .wordmark {
+      color: var(--ink);
+      text-decoration: none;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.5rem;
+      letter-spacing: .075em;
+    }
+    a { color: inherit; text-underline-offset: 5px; }
+    a:focus-visible {
+      outline: 2px solid var(--ink);
+      outline-offset: 5px;
+      border-radius: 2px;
+    }
+    .external {
+      font-size: .84rem;
+      letter-spacing: .045em;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      padding: 5px 0;
+    }
+    .external:hover { border-bottom-color: currentColor; }
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 22px 0 88px;
+      text-align: center;
+    }
+    .emblem {
+      display: block;
+      width: min(100%, 560px);
+      height: auto;
+      mix-blend-mode: multiply;
+    }
+    .message { margin-top: -55px; max-width: 550px; }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: clamp(1.65rem, 3.3vw, 2.25rem);
+      line-height: 1.24;
+      letter-spacing: -.025em;
+    }
+    .description {
+      max-width: 440px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+    .coming {
+      display: inline-block;
+      margin-top: 32px;
+      padding-top: 17px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .footer {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .78rem;
+      letter-spacing: .015em;
+    }
+    @media (max-width: 600px) {
+      .page { width: min(100% - 36px, 1100px); }
+      .masthead { min-height: 73px; }
+      .hero { padding: 20px 0 70px; }
+      .emblem { width: min(110%, 500px); max-width: none; }
+      .message { margin-top: -32px; }
+      .description { font-size: .95rem; }
+      .footer { font-size: .73rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <a class="wordmark" href="./" aria-label="PQR home">PQR</a>
+      <a class="external" href="https://github.com/Philomath-Quantitative-Research">GitHub &nearr;</a>
+    </header>
+    <main class="hero" id="main">
+      <img
+        class="emblem"
+        src="https://avatars.githubusercontent.com/u/281036968?s=1024"
+        width="1024"
+        height="1024"
+        alt="PQR — Philomath Quantitative Research, with a centaur archer emblem"
+      >
+      <div class="message">
+        <h1>Macrofinancial research group</h1>
+        <p class="description">
+          This website is taking shape. More information about PQR,
+          its research, and its projects will be shared here soon.
+        </p>
+        <span class="coming">More to come</span>
+      </div>
+    </main>
+    <footer class="footer">
+      <span>Philomath Quantitative Research</span>
+      <span>Website in development</span>
+    </footer>
+  </div>
+</body>
+</html>
